@@ -12,20 +12,20 @@ This project instantly analyzes cardiovascular vitals to predict a patient's mor
 
 ## Business Problem & Solution
 **Problem:**  
-When a heart patient arrives, doctors need to know immediately how dangerous their condition is and what medicine or treatment to start. Manually checking lab tests and guideline manuals takes valuable time.
+When a heart patient arrives, doctors need to know immediately how dangerous their condition is and what medicine or treatment to start. Manually checking lab tests and guideline manuals takes valuable time. Doctors currently waste precious time cross-referencing messy lab numbers (like kidney function or heart pumping rates) against thick medical rulebooks. This slows down diagnosis and leads to uneven patient care.
 
 **Solution:**   
-This system eliminates clinical guesswork by transforming chaotic emergency room data into immediate, evidence-based action plans:
+An automated, transparent multi-agent triage assistant that instantly calculates a patient's mortality risk level and explains exactly why that score was assigned using clear feature attributions. High-risk patients are identified immediately, providing care teams with evidence-based clinical guidelines the moment they need them most. This system eliminates clinical guesswork by transforming complex, unstructured medical data into immediate, actionable treatment plans:
 
-- **Automates Data Structuring:** Instantly converts messy, unstructured physician notes and raw lab vitals into clean, standardized patient profiles.
+- **Automated Risk Stratification:** The system instantly categorizes patients into Low, Medium, or High Risk tiers. This solves the core triage problem by showing doctors exactly who needs emergency stabilization and who can safely wait, completely removing manual guesswork.
 
-- **Calculates Instant Risk Tiers:** Evaluates complex biomarkers in milliseconds to flag high-risk patients, bypassing the delays of manual threshold checks.
+- **Agent 1 (The Vitals Normalizer):** Instantly scans messy, unstructured physician notes and raw lab results, extracting critical numbers into a clean, standardized data payload so no vital biomarker is overlooked.
 
-- **Provides Transparent Reasoning:** Uses explainable AI to pinpoint exactly which lab results (like failing kidney function) are driving a critical score, giving doctors immediate context they can trust.
+- **Agent 2 (The Risk Analyst):** Evaluates the clean data to calculate the exact mortality risk and assign the risk tier. It highlights the specific failing biomarkers (like a dangerously low ejection fraction), proving to the medical team exactly why a patient received their score.
 
-- **Delivers Targeted Care Protocols:** Retrieves exact stabilization steps from established medical guidelines the moment a patient is flagged as critical, standardizing treatment across the emergency department.
+- **Agent 3 (The Guideline Specialist - RAG):** Automatically springs into action the moment a High Risk patient is identified. It searches cardiovascular medical rulebooks and retrieves the exact, evidence-based stabilization steps tailored to the patient's condition.
 
-- **Monitors Clinical Safety:** Continuously tracks incoming patient data for statistical drift, ensuring the model remains accurate and reliable even if hospital demographics shift over time.
+- **Agent 4 (The Reporting Auditor):** Packages the parsed vitals, the explainable risk tier, and the retrieved treatment guidelines into one clean, actionable dashboard alert, ensuring the care team can start the right interventions immediately.
 
 ## Intended and Out-of-Scope Usage
 
