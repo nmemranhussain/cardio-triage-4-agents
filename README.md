@@ -14,7 +14,8 @@ This project instantly analyzes cardiovascular vitals to predict a patient's mor
 **Problem:**  
 When a heart patient arrives, doctors need to know immediately how dangerous their condition is and what medicine or treatment to start. Manually checking lab tests and guideline manuals takes valuable time.
 
-**Solution:** This system eliminates clinical guesswork by transforming chaotic emergency room data into immediate, evidence-based action plans:
+**Solution:**   
+This system eliminates clinical guesswork by transforming chaotic emergency room data into immediate, evidence-based action plans:
 
 - **Automates Data Structuring:** Instantly converts messy, unstructured physician notes and raw lab vitals into clean, standardized patient profiles.
 
