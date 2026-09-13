@@ -12,7 +12,7 @@ This project instantly analyzes cardiovascular vitals to predict a patient's mor
 
 ## Business Problem & Solution
 **Problem:**  
-When a heart patient arrives, doctors need to know immediately how dangerous their condition is and what medicine or treatment to start. Manually checking lab tests and guideline manuals takes valuable time. Doctors currently waste precious time cross-referencing messy lab numbers (like kidney function or heart pumping rates) against thick medical rulebooks. This slows down diagnosis and leads to uneven patient care.
+When a heart patient arrives, doctors need to know immediately how critical their condition is and what treatment to initiate. However, manually cross-referencing raw lab data against extensive clinical protocols consumes valuable time. This manual burden slows down the triage process and leads to inconsistent patient outcomes.
 
 **Solution:**   
 An automated, transparent multi-agent triage assistant that instantly calculates a patient's mortality risk level and explains exactly why that score was assigned using clear feature attributions. High-risk patients are identified immediately, providing care teams with evidence-based clinical guidelines the moment they need them most. This system eliminates clinical guesswork by transforming complex, unstructured medical data into immediate, actionable treatment plans:
