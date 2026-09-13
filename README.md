@@ -1,4 +1,4 @@
-# Agentic AI in HealthCare: ACAT (Acute Care Agentic Triage): Cardiovascular Failure Risk Engine & Guideline Copilot
+# Project ACAT (Acute Care Agentic Triage): Cardiovascular Failure Risk Engine & Guideline Copilot
 
 ## Basic Information
 **Name:** N M Emran Hussain  
@@ -49,9 +49,62 @@ When a heart patient arrives, doctors need to know immediately how dangerous the
 - condition_occurrence: Clinical diagnoses, including cardiovascular conditions. (~11 million rows, 16 columns).
 - procedure_occurrence: Records of medical procedures performed on patients. (~33 million rows, 15 columns). 
 
-**Original Features Used:** 
+**Original Features:** 
+|Features |
+|:--------|
+|observation_period_id |
+|person_id	|
+|observation_period_start_date |
+|observation_period_end_date |
+|period_type_concept_id |
+|condition_occurrence_id |
+|person_id_1 |
+|condition_concept_id |
+|condition_start_date |
+|condition_start_datetime |
+|condition_end_date |
+|condition_end_datetime |
+|condition_type_concept_id |
+|stop_reason |
+|provider_id |
+|visit_occurrence_id |
+|visit_detail_id |
+|condition_source_value |
+|condition_source_concept_id |
+|condition_status_source_value |
+|condition_status_concept_id |
 
 **Engineered Features:** 
+|Features |
+|:--------|
+|observation_period_id 
+|person_id |
+|observation_period_start_date |
+|observation_period_end_date |
+}period_type_concept_id |
+|condition_occurrence_id |
+|condition_concept_id |
+|condition_start_date |
+|condition_end_date |
+|condition_type_concept_id |
+|provider_id |
+|visit_occurrence_id |
+|condition_source_value |
+|condition_source_concept_id |
+|observation_period_duration_days |
+|obs_start_year |
+|obs_start_month |
+|obs_start_day |
+|obs_start_day_of_week |
+|condition_start_year |
+|condition_start_month |
+|condition_start_day |
+|condition_start_day_of_week |         
+|period_type_concept_id_encoded |         
+|condition_concept_id_encoded |  
+|condition_type_concept_id_encoded  |
+|provider_id_encoded |         
+|condition_source_concept_id_encoded |
 
 **Target Feature:** 
 
