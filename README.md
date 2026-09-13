@@ -118,7 +118,6 @@ An automated, transparent multi-agent triage assistant that instantly calculates
 |observation_period_start_date	|Metadata (Temporal)	|Interval	|The exact date the observation period began. |  
 |observation_period_end_date	|Metadata (Temporal)	|Interval	|The exact date the observation period concluded. |  
 |period_type_concept_id |Metadata (Raw) |Nominal |Original string/object concept ID defining the type of observation period. |   
-
 |condition_occurrence_id |Identifier |Nominal |Unique identifier for a specific medical condition occurrence. |  
 |condition_concept_id |Metadata (Raw) |Nominal |Original string/object clinical concept ID for the diagnosed condition. |  
 |condition_start_date |Metadata (Temporal) |Interval |The exact date the medical condition began. |  
