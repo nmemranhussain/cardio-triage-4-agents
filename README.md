@@ -16,15 +16,15 @@ When a heart patient arrives, doctors need to know immediately how dangerous the
 
 **Solution:** This system eliminates clinical guesswork by transforming chaotic emergency room data into immediate, evidence-based action plans:
 
-- Automates Data Structuring: Instantly converts messy, unstructured physician notes and raw lab vitals into clean, standardized patient profiles.
+- **Automates Data Structuring:** Instantly converts messy, unstructured physician notes and raw lab vitals into clean, standardized patient profiles.
 
-- Calculates Instant Risk Tiers: Evaluates complex biomarkers in milliseconds to flag high-risk patients, bypassing the delays of manual threshold checks.
+- **Calculates Instant Risk Tiers:** Evaluates complex biomarkers in milliseconds to flag high-risk patients, bypassing the delays of manual threshold checks.
 
-- Provides Transparent Reasoning: Uses explainable AI to pinpoint exactly which lab results (like failing kidney function) are driving a critical score, giving doctors immediate context they can trust.
+- **Provides Transparent Reasoning:** Uses explainable AI to pinpoint exactly which lab results (like failing kidney function) are driving a critical score, giving doctors immediate context they can trust.
 
-- Delivers Targeted Care Protocols: Retrieves exact stabilization steps from established medical guidelines the moment a patient is flagged as critical, standardizing treatment across the emergency department.
+- **Delivers Targeted Care Protocols:** Retrieves exact stabilization steps from established medical guidelines the moment a patient is flagged as critical, standardizing treatment across the emergency department.
 
-- Monitors Clinical Safety: Continuously tracks incoming patient data for statistical drift, ensuring the model remains accurate and reliable even if hospital demographics shift over time.
+- **Monitors Clinical Safety:** Continuously tracks incoming patient data for statistical drift, ensuring the model remains accurate and reliable even if hospital demographics shift over time.
 
 ## Intended and Out-of-Scope Usage
 
