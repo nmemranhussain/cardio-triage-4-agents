@@ -111,8 +111,44 @@ An automated, transparent multi-agent triage assistant that instantly calculates
 
 ## Data Dictionary
 
-|Column Name	      |Modeling Role	|Measurement Level	|Description|
-|------------------|--------------|------------------|-----------|
+|Column Name	      |Modeling Role	|Measurement Level	|Description|  
+|------------------|--------------|------------------|-----------|  
+|observation_period_id	|Identifier	|Nominal	|Unique system identifier for a patient's continuous period of observation. |  
+|person_id	|Identifier	|Nominal	|Unique identifier for the individual patient. |  
+|observation_period_start_date	|Metadata (Temporal)	|Interval	|The exact date the observation period began. |  
+|observation_period_end_date	|Metadata (Temporal)	|Interval	|The exact date the observation period concluded. |  
+|period_type_concept_id |Metadata (Raw) |Nominal |Original string/object concept ID defining the type of observation period. |   
+
+|condition_occurrence_id |Identifier |Nominal |Unique identifier for a specific medical condition occurrence. |  
+|condition_concept_id |Metadata (Raw) |Nominal |Original string/object clinical concept ID for the diagnosed condition. |  
+|condition_start_date |Metadata (Temporal) |Interval |The exact date the medical condition began. |  
+|condition_end_date |Metadata (Temporal) |Interval |The exact date the medical condition concluded. |  
+|condition_type_concept_id |Metadata (Raw) |Nominal |Original string/object concept ID indicating the origin/type of the condition record (e.g., EHR, claims). |  
+|provider_id |Identifier |Nominal |Unique identifier for the healthcare provider associated with the record. |  
+|visit_occurrence_id |Identifier |Nominal |Unique identifier for the clinical visit where the condition was recorded.  
+|condition_source_value |Metadata (Raw) |Nominal |The raw source system code or text value for the condition. |  
+|condition_source_concept_id |Metadata (Raw) |Nominal |The original source concept ID mapped from the source system. |   
+|observation_period_duration_days |Feature |Ratio |Calculated total number of days within the patient's observation period. |  
+|obs_start_year |Feature |Interval |Extracted year of the observation period start date. |  
+|obs_start_month |Feature |Interval |Extracted month of the observation period start date. |  
+|obs_start_day |Feature |Interval |Extracted day of the month of the observation period start date. |  
+|obs_start_day_of_week| Feature |Nominal |Extracted day of the week of the observation period start date. |  
+|condition_start_year |Feature |Interval |Extracted year of the condition start date. |  
+|condition_start_month |Feature |Interval |Extracted month of the condition start date. |  
+|condition_start_day |Feature |Interval |Extracted day of the month of the condition start date. |  
+|condition_start_day_of_week |Feature |Nominal |Extracted day of the week of the condition start date. |  
+|period_type_concept_id_encoded |Feature |Nominal |Numerically encoded concept ID for the observation period type. |  
+|condition_concept_id_encoded |Feature |Nominal |Numerically encoded clinical concept ID for the condition. |  
+|condition_type_concept_id_encoded |Feature |Nominal |Numerically encoded concept ID for the condition record origin. |  
+|provider_id_encoded |Feature |Nominal |Numerically encoded identifier for the healthcare provider. |  
+|condition_source_concept_id_encoded |Feature |Nominal |Numerically encoded source concept ID for the condition. |  
+|condition_duration_days |Feature |Ratio| Calculated total duration of the medical condition in days. |  
+|num_conditions_x |Feature |Ratio |Aggregated count of conditions (prior to a tabular merge or specific to dataset X). |  
+|avg_condition_duration_x|Feature |Ratio |Calculated average duration of conditions in days (specific to dataset X). |  
+|total_obs_period_days_x |Feature |Ratio |Total observed days calculated prior to a tabular merge (dataset X). |  
+|num_conditions_y |Feature |Ratio |Aggregated count of conditions (post-merge or specific to dataset Y). |  
+|avg_condition_duration_y |Feature |Ratio |Calculated average duration of conditions in days (specific to dataset Y).|  
+|total_obs_period_days_y| Feature |Ratio |Total observed days calculated post-merge (dataset Y). |  
 
 ## Training & Test Data
 
