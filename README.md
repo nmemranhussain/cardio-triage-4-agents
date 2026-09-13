@@ -50,7 +50,7 @@ An automated, transparent multi-agent triage assistant that instantly calculates
 - condition_occurrence: Clinical diagnoses, including cardiovascular conditions. (~11 million rows, 16 columns).
 - procedure_occurrence: Records of medical procedures performed on patients. (~33 million rows, 15 columns). 
 
-**Original Features:** 
+**Original Features:** 21 Columns
 |Features |
 |:--------|
 |observation_period_id |
@@ -75,7 +75,7 @@ An automated, transparent multi-agent triage assistant that instantly calculates
 |condition_status_source_value |
 |condition_status_concept_id |
 
-**Engineered Features:** 
+**Engineered Features:** 35 columns
 |Features |
 |:--------|
 |observation_period_id 
