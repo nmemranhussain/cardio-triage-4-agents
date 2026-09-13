@@ -7,7 +7,7 @@
 **Model Version:** 1.0.0  
 **License:** [Apache License Version 2.0,](LICENSE)
 
-## Purpose of this Project
+## Purpose
 This project instantly analyzes cardiovascular vitals to predict a patient's mortality risk, clearly explain its clinical reasoning, and provide emergency doctors with immediate, guideline-based treatment steps.
 
 ## Business Problem & Solution
