@@ -48,7 +48,9 @@ An automated, transparent multi-agent triage assistant that instantly calculates
 
 - person: Patient demographics. (~2.7 million rows, 18 columns).  
 - condition_occurrence: Clinical diagnoses, including cardiovascular conditions. (~11 million rows, 16 columns).
-- procedure_occurrence: Records of medical procedures performed on patients. (~33 million rows, 15 columns). 
+- procedure_occurrence: Records of medical procedures performed on patients. (~33 million rows, 15 columns).
+
+**Dataset used for this Project:** 900,000 rows and 35 columns. Original and Engineered columns are given below:
 
 **Original Features:** 21 Columns
 |Features |
